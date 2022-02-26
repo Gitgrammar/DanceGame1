@@ -32,4 +32,8 @@ public class ScreenManager : MonoBehaviour
         
         
     }
+    GetMotionList DisplayMotion()
+    {
+        return getMotionList;
+    }
 }

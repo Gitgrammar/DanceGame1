@@ -5081,6 +5081,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 405076, guid: 065dec78ef0d3bc40a079978e607c379, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.41314256
+      objectReference: {fileID: 0}
+    - target: {fileID: 405076, guid: 065dec78ef0d3bc40a079978e607c379, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9087875
+      objectReference: {fileID: 0}
     - target: {fileID: 420506, guid: 065dec78ef0d3bc40a079978e607c379, type: 3}
       propertyPath: m_LocalPosition.x
       value: -211.0765
@@ -5125,10 +5133,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 424846, guid: 065dec78ef0d3bc40a079978e607c379, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.41314256
+      objectReference: {fileID: 0}
+    - target: {fileID: 424846, guid: 065dec78ef0d3bc40a079978e607c379, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9087875
+      objectReference: {fileID: 0}
+    - target: {fileID: 454896, guid: 065dec78ef0d3bc40a079978e607c379, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.9910381
+      objectReference: {fileID: 0}
+    - target: {fileID: 454896, guid: 065dec78ef0d3bc40a079978e607c379, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.028551796
+      objectReference: {fileID: 0}
     - target: {fileID: 9588980, guid: 065dec78ef0d3bc40a079978e607c379, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: f738ee3ecdc05594c99316c4b42edbc0, type: 2}
+      objectReference: {fileID: 9100000, guid: 012a23522bf8f37429faf416816aea82, type: 2}
     - target: {fileID: 13756654, guid: 065dec78ef0d3bc40a079978e607c379, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -6273,6 +6297,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f3d8759e2423214e8542f9e90fccdd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  motionText: {fileID: 0}
+  getMotionList: {fileID: 0}
 --- !u!1 &1622362972
 GameObject:
   m_ObjectHideFlags: 0
