@@ -6,6 +6,9 @@ using UnityEngine.UI;
 public class ScreenManager : MonoBehaviour
 {
     float countTime = 0;
+    public Text motionText;
+    public GetMotionList getMotionList;
+    
    
     void Start()
     {
@@ -17,6 +20,11 @@ public class ScreenManager : MonoBehaviour
     {
         countTime += Time.deltaTime;
         GetComponent<Text>().text = countTime.ToString("F2");
+
+        motionText.text = "Motion : " + gameObject.transform.position.z;
+        
+
+        
         
     }
 }
