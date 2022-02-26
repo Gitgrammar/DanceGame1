@@ -7,9 +7,8 @@ public class ScreenManager : MonoBehaviour
 {
     float countTime = 0;
     
-    public Text motionText;
-    public GetMotionList getMotionList;
-    
+ 
+    public PlayerPrefs motions;
    
     void Start()
     {
@@ -25,15 +24,15 @@ public class ScreenManager : MonoBehaviour
 
         //得たモーションを画面上に表示する。
 
-        motionText.text = "Motion : " + gameObject.GetComponent<GetMotionList>();
-        Debug.Log(motionText.text);
+        GetMotionList motions = GetComponent<GetMotionList>();
+
+       
+        
+            Debug.Log(string.Join(",",motions));
+        Debug.Log("Guess What");
         
 
-        
-        
     }
-    GetMotionList DisplayMotion()
-    {
-        return getMotionList;
-    }
+        
+   
 }
