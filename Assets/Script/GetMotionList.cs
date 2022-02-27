@@ -1,27 +1,30 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class GetMotionList : MonoBehaviour
+namespace showMotionList
 {
-    public List<string> motionList = new List<string>();
 
-    void OnCollisionEnter(Collision other)
+    public class GetMotionList : MonoBehaviour
     {
-        if (other.gameObject.tag == "Enemy")
+        public List<string> motionList = new List<string>();
+
+        void OnCollisionEnter(Collision other)
         {
-            Animator animator = other.gameObject.GetComponent<Animator>();
-            RuntimeAnimatorController ac = animator.runtimeAnimatorController;
-            int count = 0;
-            while(count < ac.animationClips.Length)
+            if (other.gameObject.tag == "Enemy")
             {
-                motionList.Add(ac.animationClips[count].name);
-                Debug.Log(ac.animationClips[count].name);
-                count++;
+                Animator animator = other.gameObject.GetComponent<Animator>();
+                RuntimeAnimatorController ac = animator.runtimeAnimatorController;
+                int count = 0;
+                while (count < ac.animationClips.Length)
+                {
+                    motionList.Add(ac.animationClips[count].name);
+                    Debug.Log(ac.animationClips[count].name);
+                    count++;
+                }
+
+
+                Destroy(other.gameObject);
             }
-                    
-            
-            Destroy(other.gameObject);
         }
     }
 }

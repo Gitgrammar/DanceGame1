@@ -2,13 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using showMotionList;
 
 public class ScreenManager : MonoBehaviour
 {
     float countTime = 0;
-    
- 
-    public PlayerPrefs motions;
+     public PlayerPrefs motions;
    
     void Start()
     {
