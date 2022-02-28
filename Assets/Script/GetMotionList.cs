@@ -1,8 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-namespace showMotionList
-{
+
 
     public class GetMotionList : MonoBehaviour
     {
@@ -27,4 +26,4 @@ namespace showMotionList
             }
         }
     }
-}
+
