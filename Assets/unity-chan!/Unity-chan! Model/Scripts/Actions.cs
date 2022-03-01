@@ -7,35 +7,34 @@ using UnityEngine.UI;
 public class Actions : MonoBehaviour
 {
     float countTime = 0;
-    public PlayerPrefs motions;
+    
     public GameObject player;
+    public GetMotionList motions;
 
     void Start()
     {
-
+        motions = player.gameObject.GetComponent<GetMotionList>();
     }
 
     // Update is called once per frame
     void Update()
     {
        
-        GetMotionList motions = player.gameObject.GetComponent<GetMotionList>();
+   
 
         List<string> actions = motions.motionList;
 
-  
+        string[] array = actions.ToArray();
 
-           
-        foreach(string a in actions)
+        for (int i = 0; i <= array.Length; i++)
         {
-            GetComponent<Text>().text =string.Join("\n", a);
-            Debug.Log(a);
-            Debug.Log(string.Join("\n", a));
+
+            GetComponent<Text>().text = string.Join("\n", array);
         }
-        
+        Debug.Log(string.Join("\n", actions));
 
 
-        //得たモーションを画面上に表示する。
+        //得たモーションをデバッグ表示する。
 
         Debug.Log(string.Join(",", actions));
 
