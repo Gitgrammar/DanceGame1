@@ -18,7 +18,7 @@ public class NextScene : MonoBehaviour
         step_time += Time.deltaTime;
 
         //25秒後に画面遷移(Titleへ移動）
-        if (step_time >= 15.0f) {
+        if (step_time >= 12.0f) {
             SceneManager.LoadScene("Endroll");
         }
     }
